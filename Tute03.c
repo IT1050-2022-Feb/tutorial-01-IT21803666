@@ -1,19 +1,22 @@
-/*Exercise 3 - Repetition
-
-Write a C program to calculate the sum of the numbers from 1 to n.
-Where n is a keyboard input.
-
-e.g.
-
-n -> 100
-sum = 1+2+3+....+ 99+100 = 5050
-
-n -> 1-
-sum = 1+2+3+...+10 = 55 */
-
+//programme to calculate the sum of numbers from 1 to n
 #include <stdio.h>
-int main() {
-  
-  return 0;
-}
+int main (void) //function main begins programme execution 
+{
+  int n, counter = 1; //variable declaration 
+  int c = 0, int total = 0;
 
+  printf("Enter a number:"); //prompt
+  scanf("%d", &n); //user enters a number from keyboard
+
+  while ( counter <= n ) //while condition
+    {
+      c++; //post increment of variable c
+
+      total = total + c; //calculation of total
+
+      counter++; //post increment of counter
+    } 
+  printf("Total is %d", total); //prompt
+ 
+  return 0; //end of main function 
+}
